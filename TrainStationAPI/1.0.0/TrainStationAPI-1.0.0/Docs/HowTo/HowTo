@@ -1,0 +1,77 @@
+## Introduction
+
+TrainStationAPI is a powerful tool for developers who need access to train-related data for their applications. Whether you're building a travel app, a website for commuters, or anything in between, TrainStationAPI can provide you with the necessary information. This document will guide you through the steps to get started with TrainStationAPI, including authentication, making requests, and handling responses.
+
+### Step 1: Sign Up and Create Application
+
+Before you can start using TrainStationAPI, you need to sign up for an account and create an application. Follow these steps:
+
+1. **Sign Up:** Register for an account on the TrainStationAPI website.
+2. **Create Application:** Once logged in, create a new application from your account dashboard.
+3. **Subscribe to the API:** Subscribe to the TrainStationAPI and generate an API key.
+
+### Step 2: Use Token to Invoke the API
+
+After subscribing to the API, you'll receive an access token. You need to include this token in your API requests to authenticate yourself. Here's how you can do it:
+
+```bash
+curl -X 'GET' \
+'https://localhost:8243/trainstationapi/1.0.0/stations' \
+-H 'accept: application/json' \
+-H 'Authorization : Bearer <access token>'
+```
+
+Replace `<access token>` with the actual access token you received.
+
+### Step 3: Get All Stations
+
+To retrieve information about all train stations, send a GET request to the following endpoint:
+
+```
+GET /stations
+```
+
+#### Request
+
+```bash
+curl -X 'GET' \
+'https://localhost:8243/trainstationapi/1.0.0/stations' \
+-H 'accept: application/json' \
+-H 'Authorization : Bearer <access token>'
+```
+
+#### Response
+
+```json
+[
+  {
+    "id": "123",
+    "name": "Grand Central Terminal",
+    "location": {
+      "latitude": 40.7527,
+      "longitude": -73.9772
+    },
+    "address": {
+      "street": "89 E 42nd St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10017",
+      "country": "USA"
+    }
+  },
+  {
+    "id": "456",
+    "name": "Union Station",
+    "location": {
+      "latitude": 34.0569,
+      "longitude": -118.2369
+    },
+    "address": {
+      "street": "800 N Alameda St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90012",
+      "country": "USA"
+    }
+  }
+]
