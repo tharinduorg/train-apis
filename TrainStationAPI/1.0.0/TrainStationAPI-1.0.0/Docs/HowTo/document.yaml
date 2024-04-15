@@ -1,9 +1,0 @@
-type: document
-version: v4.3.0
-data:
-  documentId: b637bba7-4585-4bd8-8f99-4f110e49e413
-  name: HowTo
-  type: HOWTO
-  summary: HowTo use TrainStationAPI
-  sourceType: MARKDOWN
-  visibility: API_LEVEL
