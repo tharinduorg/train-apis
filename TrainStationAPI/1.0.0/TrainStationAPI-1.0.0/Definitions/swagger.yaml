@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: TrainStationAPI
+  title: TrainStationApi
   description: API for retrieving information about train stations
   version: 1.0.0
 servers:
