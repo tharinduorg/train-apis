@@ -23,6 +23,15 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Station'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
       security:
        -
         default: []
@@ -47,6 +56,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Station'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
       security:
        -
         default: []
@@ -66,6 +85,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Station'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
       security:
        -
         default: []
@@ -90,6 +119,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Station'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
       security:
        -
         default: []
@@ -121,6 +160,16 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Platform'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
       security:
        -
         default: []
@@ -155,6 +204,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Platform'
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
       security:
        -
         default: []
@@ -186,6 +245,16 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Train'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
       security:
        -
         default: []
@@ -220,6 +289,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Train'
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
       security:
        -
         default: []
