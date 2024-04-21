@@ -30,7 +30,6 @@ data:
   apiKeyHeader: ApiKey
   securityScheme:
    - oauth_basic_auth_api_key_mandatory
-   - oauth2
   visibility: PUBLIC
   visibleRoles: []
   visibleTenants: []
