@@ -1,7 +1,6 @@
 type: api
 version: v4.3.0
 data:
-  id: 2166e768-7940-47cd-9604-4f0ac70fa79f
   name: TrainStationApi
   description: API for retrieving information about train stations.
   context: /trainstationapi
@@ -18,7 +17,6 @@ data:
   enableSubscriberVerification: false
   type: HTTP
   transport:
-   - http
    - https
   tags:
    - Trains
@@ -65,18 +63,8 @@ data:
      - DELETE
      - PATCH
      - OPTIONS
-  websubSubscriptionConfiguration:
-    enable: false
-    secret: ""
-    signingAlgorithm: SHA1
-    signatureHeader: x-hub-signature
-  createdTime: "1713159630651"
-  lastUpdatedTimestamp: "1713159819036"
-  lastUpdatedTime: 2024-04-15 11:13:39.036
   endpointConfig:
     endpoint_type: http
-    sandbox_endpoints:
-      url: http://backend-dev-service:8080/train-operations/v1/
     production_endpoints:
       url: http://backend-dev-service:8080/train-operations/v1/
   endpointImplementationType: ENDPOINT
